@@ -4,7 +4,7 @@ This is my personal design portfolio, built to showcase my work in graphic desig
 The site reflects my approach to design — intentional, story-driven, and focused on clarity and usability.
 
 ## Live Site
-(Once deployed, add your link here)
+git commit -m "Initial commit"
 
 ---
 
