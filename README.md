@@ -4,7 +4,7 @@ This is my personal design portfolio, built to showcase my work in graphic desig
 The site reflects my approach to design — intentional, story-driven, and focused on clarity and usability.
 
 ## Live Site
-git commit -m "Initial commit"
+https://portfolio-nu-two-53.vercel.app/
 
 ---
 
