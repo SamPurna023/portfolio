@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import mee from "@/assets/mee.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,11 +21,17 @@ const Header = () => {
       }`}
     >
       <nav className="container flex items-center justify-between">
-        <a
-          href="#"
-          className="font-serif text-xl font-medium tracking-tight text-foreground hover:text-primary transition-colors"
-        >
-          Sampurna
+        <a href="#" className="flex items-center gap-3 group">
+          <div className="w-9 h-9 rounded-full overflow-hidden border border-border bg-background shadow-sm transition-transform duration-300 group-hover:scale-105">
+            <img
+              src={mee}
+              alt="Sampurna logo"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <span className="font-serif text-xl font-medium tracking-tight text-foreground group-hover:text-primary transition-colors">
+            Sampurna
+          </span>
         </a>
 
         <ul className="hidden md:flex items-center gap-8">

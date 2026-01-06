@@ -1,45 +1,69 @@
 import ProjectCard from "./ProjectCard";
-import projectTechfest from "@/assets/project-techfest.jpg";
-import projectAwareness from "@/assets/project-awareness.jpg";
-import projectHackathon from "@/assets/project-hackathon.jpg";
-import projectCultural from "@/assets/project-cultural.jpg";
+import projectGenAi from "@/assets/project-gen-ai.jpg";
+import projectZostel1 from "@/assets/project-zostel-1.jpg";
+import projectZostel2 from "@/assets/project-zostel-2.png";
+import projectZostel3 from "@/assets/project-zostel-3.png";
+import projectBaby from "@/assets/project-baby.png";
+import projectGrocer1 from "@/assets/project-grocer-1.png";
+import projectGrocer2 from "@/assets/project-grocer-2.png";
+import projectGrocer3 from "@/assets/project-grocer-3.png";
+import projectGrocer4 from "@/assets/project-grocer-4.png";
+import projectGrocer5 from "@/assets/project-grocer-5.png";
+import projectGrocer6 from "@/assets/project-grocer-6.png";
 
-const projects = [
+const projects = [  
   {
-    title: "TechFest 2024",
+    title: "Zostel Kasol Launch Campaign",
+    category: "Brand Campaign · Social Media",
+    description:
+      "Designed a social media campaign to announce the launch of Zostel Kasol, focusing on wanderlust, warmth, and the feeling of arrival. The visuals were crafted to spark curiosity, build anticipation, and connect with young travelers through storytelling-led posts and swipe-based narratives.",
+    approach:
+      "To drive organic engagement, this campaign utilized immersive location photography and conversational copy. I balanced warm, natural aesthetics with bold typography to ensure readability while creating a swipe-ready narrative that prioritized emotional connection and brand discovery.",
+    image: [projectZostel1, projectZostel2, projectZostel3],
+  },
+  {
+    title: "Maternal Care Awareness Visual",
+    category: "Social Impact · Awareness Campaign",
+    description:
+      "Designed a supportive and emotionally sensitive visual for a maternal care awareness initiative. The goal was to communicate reassurance and safety through soft illustrations, warm tones, and nurturing symbolism—making the message approachable and comforting rather than instructional or clinical.",
+    approach:
+      "Used warm color palettes, organic shapes, and gentle typography to evoke calm and trust. The illustration style and composition were intentionally minimal to keep the focus on emotional connection and clarity of message.",
+    image: projectBaby,
+    imageClassName: "w-full max-w-md mx-auto",
+  },
+  {
+    title: "Grocery App UI/UX Case Study",
+    category: "Grocery App UI Carousel",
+    description:
+      "Mobile UI screens for a grocery app, showcasing key flows from home and browse to product details, cart, favorites, and payment—highlighting a warm gradient palette and clean, card-based layout.",
+    approach:
+      "Focused on clarity and hierarchy with large tap targets, calm gradients, and consistent iconography across home, search, product, cart, and payment screens. The carousel presents the sequence of UI screens to communicate the end-to-end flow.",
+    image: [
+      projectGrocer1,
+      projectGrocer2,
+      projectGrocer3,
+      projectGrocer4,
+      projectGrocer5,
+      projectGrocer6,
+    ],
+  },
+  {
+    title: "GenAI Study Jams 2024",
     category: "Event Branding",
-    description:
-      "Led the complete visual identity for our college's flagship tech festival. Created posters, social media creatives, standees, and digital assets that captured the energy of innovation while maintaining clarity and accessibility.",
+    description: (
+      <>
+        <strong>Lead Designer | GenAI Study Jams (GDG On Campus)</strong>{" "}
+        Developed a comprehensive visual identity for a month-long AI learning
+        initiative at Gauhati University. I engineered a futuristic design
+        system centered on innovation and momentum, ensuring the visual language
+        was scalable across print, web, and social platforms. The campaign
+        successfully balanced high-concept aesthetics with functional clarity to
+        drive student engagement.
+      </>
+    ),
     approach:
-      "I focused on bold gradients and dynamic shapes to convey movement and excitement. The typography was kept clean and modern to balance the vibrant colors, ensuring the key information remained readable even from a distance.",
-    image: projectTechfest,
-  },
-  {
-    title: "Mental Health Matters",
-    category: "Social Impact Campaign",
-    description:
-      "Designed a series of Instagram posts and stories for a student-led mental health awareness initiative. The goal was to create visuals that felt safe, approachable, and genuinely supportive rather than clinical or distant.",
-    approach:
-      "Soft, warm color palettes with gentle illustrations. I avoided harsh contrasts and instead used flowing shapes that felt calming. Every visual element was chosen to reduce anxiety, not add to it.",
-    image: projectAwareness,
-  },
-  {
-    title: "Code Sprint Hackathon",
-    category: "Event Collateral",
-    description:
-      "Created the complete visual package for a 24-hour coding competition—from pre-event teasers to day-of signage. The challenge was to make tech feel exciting without falling into overused futuristic clichés.",
-    approach:
-      "Circuit board patterns reimagined as design elements, with a dark theme that felt premium yet energetic. The blue neon accents added urgency without overwhelming the core information hierarchy.",
-    image: projectHackathon,
-  },
-  {
-    title: "Utsav Cultural Fest",
-    category: "Social Media Templates",
-    description:
-      "Developed a cohesive set of Instagram templates for our annual cultural festival. The challenge was honoring traditional aesthetics while making them feel fresh and shareable for a young audience.",
-    approach:
-      "Fusion of traditional Indian motifs with modern layout principles. Rich magentas and golds balanced with structured grid layouts. Each template was designed to be flexible while maintaining brand consistency.",
-    image: projectCultural,
+      "To capture the energy of Generative AI, I paired vibrant gradients and glowing overlays with geometric motifs symbolizing discovery. By balancing bold typography with high-contrast layouts, I ensured readability across digital feeds and campus displays. I maintained strict GDG brand integrity while introducing strategic variations to prevent content fatigue and boost campaign recall.",
+    image: projectGenAi,
   },
 ];
 
@@ -53,12 +77,15 @@ const Work = () => {
           <h2 className="font-serif text-4xl md:text-5xl font-medium leading-tight text-foreground mb-6">
             Projects that shaped
             <br />
-            <span className="text-muted-foreground italic">my design thinking.</span>
+            <span className="text-muted-foreground italic">
+              my design thinking.
+            </span>
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Each project taught me something new about visual communication—whether it was 
-            grabbing attention in a crowded feed, making complex information accessible, 
-            or creating emotional connections through design.
+            Each project taught me something new about visual
+            communication—whether it was grabbing attention in a crowded feed,
+            making complex information accessible, or creating emotional
+            connections through design.
           </p>
         </div>
 

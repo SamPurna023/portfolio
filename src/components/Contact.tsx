@@ -21,7 +21,7 @@ const Contact = () => {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Button variant="hero" size="xl" asChild>
-              <a href="mailto:hello@sampurna.design">
+              <a href="mailto:sampurnabiswas.org@gmail.com">
                 <Mail className="w-5 h-5" />
                 Say Hello
               </a>
@@ -31,7 +31,7 @@ const Contact = () => {
           {/* Social links */}
           <div className="flex items-center justify-center gap-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sampurnabiswas023/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"
@@ -41,7 +41,7 @@ const Contact = () => {
             </a>
             <span className="w-1 h-1 rounded-full bg-border" />
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/vectorsana/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"

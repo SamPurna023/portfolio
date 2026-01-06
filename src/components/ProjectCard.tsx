@@ -1,11 +1,20 @@
 interface ProjectCardProps {
   title: string;
   category: string;
-  description: string;
+  description: React.ReactNode;
   approach: string;
-  image: string;
+  image: string | string[];
   index: number;
+  imageClassName?: string;
 }
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const ProjectCard = ({
   title,
@@ -14,6 +23,7 @@ const ProjectCard = ({
   approach,
   image,
   index,
+  imageClassName = "",
 }: ProjectCardProps) => {
   const isEven = index % 2 === 0;
 
@@ -25,13 +35,31 @@ const ProjectCard = ({
     >
       {/* Image */}
       <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
-        <div className="relative group overflow-hidden rounded-2xl bg-muted aspect-[4/3]">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors duration-500" />
+      <div className="relative group overflow-hidden rounded-2xl bg-muted inline-block">
+        {Array.isArray(image) ? (
+           <Carousel className="w-full max-w-md mx-auto">
+            <CarouselContent>
+              {image.map((img, idx) => (
+                <CarouselItem key={idx} className="flex justify-center">
+                  <img
+                    src={img}
+                    alt={`${title} ${idx + 1}`}
+                     className={`w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105 ${imageClassName}`}
+                  />
+                </CarouselItem>
+              ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2 z-10" />
+              <CarouselNext className="right-2 z-10" />
+            </Carousel>
+          ) : (
+            <img
+              src={image}
+              alt={title}
+              className={`w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105 ${imageClassName}`}
+            />
+          )}
+          <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors duration-500 pointer-events-none" />
         </div>
       </div>
 
@@ -47,7 +75,9 @@ const ProjectCard = ({
           {description}
         </p>
         <div className="pt-6 border-t border-border">
-          <p className="text-sm font-medium text-foreground mb-2">Design Approach</p>
+          <p className="text-sm font-medium text-foreground mb-2">
+            Design Approach
+          </p>
           <p className="text-muted-foreground text-sm leading-relaxed">
             {approach}
           </p>

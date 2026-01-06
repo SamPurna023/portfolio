@@ -5,6 +5,7 @@ const About = () => {
     "Visual Storytelling",
     "Layout & Typography",
     "Brand Identity Basics",
+    "UI/UX Design",
   ];
 
   const tools = ["Figma", "Canva", "Adobe Illustrator", "Photoshop"];
@@ -19,28 +20,31 @@ const About = () => {
             <h2 className="font-serif text-4xl md:text-5xl font-medium leading-tight text-foreground mb-8">
               Designing with curiosity,
               <br />
-              <span className="text-muted-foreground italic">consistency, and care.</span>
+              <span className="text-muted-foreground italic">intention, and care.</span>
             </h2>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
-              <p>
-                I didn't start with a design degree or a formal education in visual arts. 
-                I started with curiosity—a deep interest in why some visuals just <em>feel</em> right, 
-                why certain layouts guide your eyes effortlessly, and why good design often 
-                goes unnoticed because it simply works.
-              </p>
-              <p>
-                As a design lead for campus tech events, I learned that design isn't just 
-                about making things look good—it's about solving problems. Every poster 
-                I created had to grab attention in a crowded notice board. Every social 
-                media creative had to tell a story in seconds.
-              </p>
-              <p>
-                Through social impact campaigns, I discovered the power of emotionally 
-                driven visuals. Design became my way of giving voice to ideas that matter. 
-                Now, I bring that same intentionality to every project—asking not just 
-                "what looks good?" but "what serves the purpose best?"
-              </p>
+            <p>
+              I didn’t come from a formal design background. I came from curiosity questioning
+              why some visuals feel effortless, why certain layouts guide attention naturally,
+              and why good design often goes unnoticed because it simply works.
+            </p>
+
+            <p>
+              As a design lead for campus tech communities and events, I learned that design
+              isn’t about decoration it’s about clarity. Every poster had seconds to stand out
+              on a crowded notice board, and every social media creative needed to communicate
+              a story instantly.
+            </p>
+
+            <p>
+              Working on social impact campaigns deepened that understanding. I saw how
+              thoughtful visuals could create comfort, spark awareness, and give voice to
+              ideas that matter. Today, I approach every project with intention balancing
+              creativity with consistency, emotion with usability, and storytelling with
+              structure.
+            </p>
+
             </div>
           </div>
 
